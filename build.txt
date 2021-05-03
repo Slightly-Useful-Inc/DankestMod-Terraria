@@ -1,0 +1,3 @@
+displayName = The Dankest Mod
+author = Slightly Useful Inc.
+version = 0.1
