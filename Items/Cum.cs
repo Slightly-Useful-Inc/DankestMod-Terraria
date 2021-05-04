@@ -9,7 +9,12 @@ namespace DankestMod.Items
         {
             DisplayName.SetDefault("Cum");
             Tooltip.SetDefault("Just Cum");
-            
+        }
+
+
+        public override void SetDefaults()
+        {
+            item.maxStack = 99;
         }
 
 

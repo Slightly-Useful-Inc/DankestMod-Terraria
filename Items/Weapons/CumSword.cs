@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DankestMod.Items
+namespace DankestMod.Items.Weapons
 {
 	public class CumSword : ModItem
 	{
@@ -19,10 +19,10 @@ namespace DankestMod.Items
 			item.height = 50;
 			item.useTime = 20;
 			item.useAnimation = 20;
-			item.useStyle = 1;
+			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
 			item.value = 10000;
-			item.rare = 2;
+			item.rare = ItemRarityID.Expert;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -30,7 +30,7 @@ namespace DankestMod.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(, 10);
+			recipe.AddIngredient(mod, "Cum", 20);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
