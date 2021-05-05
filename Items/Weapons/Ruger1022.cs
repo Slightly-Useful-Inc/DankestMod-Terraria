@@ -33,5 +33,16 @@ namespace DankestMod.Items.Weapons
             item.useAmmo = AmmoID.Bullet;
         }
 
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Wood, 10);
+            recipe.AddIngredient(ItemID.IronBar, 20);
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
+
     }
 }
