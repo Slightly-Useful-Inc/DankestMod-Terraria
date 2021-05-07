@@ -14,7 +14,7 @@ namespace DankestMod.Items.Ammo
 
         public override void SetDefaults()
         {
-            item.damage = 100;
+            item.damage = 15;
             item.ranged = true;
             item.width = 8;
             item.height = 8;
@@ -24,8 +24,8 @@ namespace DankestMod.Items.Ammo
             item.value = 10;
             item.rare = ItemRarityID.Green;
             item.shoot = ProjectileID.Bullet;
-            item.shootSpeed = 16f;
-            item.ammo = AmmoID.Bullet;
+            item.shootSpeed = 10f;
+            item.ammo = 42069;
         }
 
 

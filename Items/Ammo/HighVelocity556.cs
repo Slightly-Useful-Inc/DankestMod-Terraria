@@ -25,7 +25,7 @@ namespace DankestMod.Items.Ammo
             item.rare = ItemRarityID.Green;
             item.shoot = ProjectileID.BulletHighVelocity;
             item.shootSpeed = 16f;
-            item.ammo = AmmoID.Bullet;
+            item.ammo = 6969;
         }
 
 

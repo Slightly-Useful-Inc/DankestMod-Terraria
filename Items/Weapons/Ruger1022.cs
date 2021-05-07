@@ -24,13 +24,13 @@ namespace DankestMod.Items.Weapons
             item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 50;
-            item.value = 100000000;
+            item.value = 100;
             item.rare = ItemRarityID.Expert;
             item.UseSound = SoundID.Item11;
-            item.autoReuse = true;
+            item.autoReuse =false;
             item.shoot = ProjectileID.Bullet;
-            item.shootSpeed = 1000f;
-            item.useAmmo = AmmoID.Bullet;
+            item.shootSpeed = 10f;
+            item.useAmmo = 42069;
         }
 
 
