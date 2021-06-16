@@ -3,18 +3,18 @@ using Terraria.ModLoader;
 
 namespace DankestMod.Items.Ammo
 {
-    class Regular22 : ModItem
+    class HighVelocity762 : ModItem
     {
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault(".22 LR Round");
-            Tooltip.SetDefault("The Small One");
+            DisplayName.SetDefault("7.62x39mm Round");
+            Tooltip.SetDefault("The Finest Soviet Calibar");
         }
 
         public override void SetDefaults()
         {
-            item.damage = 15;
+            item.damage = 100;
             item.ranged = true;
             item.width = 8;
             item.height = 8;
@@ -23,9 +23,9 @@ namespace DankestMod.Items.Ammo
             item.knockBack = 1.5f;
             item.value = 10;
             item.rare = ItemRarityID.Green;
-            item.shoot = ProjectileID.Bullet;
-            item.shootSpeed = 10f;
-            item.ammo = 6922;
+            item.shoot = ProjectileID.BulletHighVelocity;
+            item.shootSpeed = 16f;
+            item.ammo = 69762;
         }
 
 

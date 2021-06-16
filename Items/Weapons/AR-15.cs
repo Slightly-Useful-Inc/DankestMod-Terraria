@@ -1,21 +1,19 @@
-﻿using Terraria.ModLoader;
-using Terraria.ID;
+﻿using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace DankestMod.Items.Weapons
 {
-    class Ruger1022 : ModItem
+    class AR_15 : ModItem
     {
-
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ruger 10/.22");
-            Tooltip.SetDefault("Everyone's First Gun");
+            DisplayName.SetDefault("AR-15");
+            Tooltip.SetDefault("The Choice of School Shooters Everywhere!");
         }
-
 
         public override void SetDefaults()
         {
-            item.damage = 50;
+            item.damage = 1000;
             item.ranged = true;
             item.width = 40;
             item.height = 20;
@@ -24,13 +22,13 @@ namespace DankestMod.Items.Weapons
             item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 50;
-            item.value = 100;
+            item.value = 100000000;
             item.rare = ItemRarityID.Expert;
             item.UseSound = SoundID.Item11;
-            item.autoReuse =false;
-            item.shoot = ProjectileID.Bullet;
-            item.shootSpeed = 10f;
-            item.useAmmo = 6922;
+            item.autoReuse = true;
+            item.shoot = ProjectileID.BulletHighVelocity;
+            item.shootSpeed = 1000f;
+            item.useAmmo = 69556;
         }
 
 
@@ -38,7 +36,7 @@ namespace DankestMod.Items.Weapons
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Wood, 10);
-            recipe.AddIngredient(ItemID.IronBar, 20);
+            recipe.AddIngredient(ItemID.LunarBar, 20);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();

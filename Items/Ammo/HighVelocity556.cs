@@ -9,7 +9,7 @@ namespace DankestMod.Items.Ammo
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("5.56 Round");
-            Tooltip.SetDefault("The One Size Fits All of Bullets");
+            Tooltip.SetDefault("The Standard Bullet of the AR-15");
         }
 
         public override void SetDefaults()
@@ -25,7 +25,7 @@ namespace DankestMod.Items.Ammo
             item.rare = ItemRarityID.Green;
             item.shoot = ProjectileID.BulletHighVelocity;
             item.shootSpeed = 16f;
-            item.ammo = 6969;
+            item.ammo = 69556;
         }
 
 
