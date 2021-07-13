@@ -30,7 +30,7 @@ namespace DankestMod.Items.Weapons
             item.autoReuse =false;
             item.shoot = ProjectileID.Bullet;
             item.shootSpeed = 10f;
-            item.useAmmo = 6922;
+            item.useAmmo = 97;
         }
 
 
